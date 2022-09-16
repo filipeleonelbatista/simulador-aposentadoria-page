@@ -32,11 +32,11 @@ Esse projeto foi desenvolvido com as seguintes tecnologias:
 * Necessário Wordpress instalado localmente. Colocar dentro da pasta do tema ativo do wordpress.
 * Adicionar a linha de codigo dentro do arquivo no final em `functions.php` do tema ativo.
 
-ˋˋˋphp
-
-    require get_template_directory().'./sa_functions.php';
-    
-```
+<code>
+    require get_template_directory().'./sa_functions.php';    
+</code>
+<br />
+<br />
 
 * Dentro do arquivo `sa_functions.php` na variavel `$theme_name` mencionar o nome do tema conforme encontrado no arquivo `functions.php` do tema ativo.
 * Após isso basta ir no Painel administrativo do site > Aparencia > Personalizar > Simulador de aposentadoria e definir os parametros do simulador.
