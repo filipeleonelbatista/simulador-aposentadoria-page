@@ -1,0 +1,226 @@
+/* CSS Customizada para Simulador de Calculo de Aposentadoria    */
+/* Criador            : W Mendes Marketing Digital                */
+/* Site               : https://www.wmendes.com                  */
+/* Última modificação : 26/08/2020                               */
+
+
+
+/* Area do Formulario*/
+.headsimulador {
+    text-align : center;
+    color : #fff;
+    background-color : #a35549;
+    padding : 10px;
+}
+.bodysimulador {
+    border : 1px solid #a35549;
+    padding : 30px;
+    margin-top : -10px;
+}	
+
+.form-genero form-inputs{
+    padding:20px;
+    width:100%
+    
+}
+
+.form-genero i{color:#a35549;font-size:30px}
+
+.form-genero .form-genero-homem, .form-genero .form-genero-mulher{
+    padding:10px;
+    width:45%;
+    text-align:center;
+    border:1px solid #a35549;
+    border-radius:4px;
+    display:inline-block;
+    vertical-align:middle
+    
+}
+
+.form-genero .form-genero-mulher{
+    margin-right:5%
+    
+}
+
+.form-genero label{margin:0}
+
+.form-genero .ativo{color:#fff;background-color:#a35549}
+
+.genero-click{cursor:pointer}
+
+
+
+.idade {
+    padding:20px;
+    width:100%;
+    border:1px solid #a35549;
+    border-radius:4px;
+    display:inline-block;
+    vertical-align:middle;        
+    
+}
+
+h4 {
+    font-weight : bold;
+
+}	
+
+.btn-calc{
+    text-align : center;
+    padding : 10px;
+
+}
+
+.btn-custom{
+    font-weight : bold;
+    font-size : 150%;
+    background-color : #a35549;
+    color: #fff!important;
+    min-width: 400px;
+}
+
+.btn-custom:hover, .btn-custom2:hover {
+    background-color : #c1422f;
+    color: #fff!important;
+}
+
+.btn-custom2{
+    font-weight : bold;
+    font-size : 150%;
+    background-color : #a35549;
+    color: #fff ;
+    width: 70%;
+}	
+
+.caixa1{
+    padding-left : 200px;
+    padding-right : 200px;
+    padding-top : 30px;
+    padding-bottom : 30px;
+}
+
+@media only screen and (max-width: 600px) {
+    .caixa1{
+        padding : 30px;
+    }
+}
+
+.caixa2{
+    border:1px solid #a35549;
+    padding : 30px;
+}    
+
+.caixatit1{
+    font-weight : bold;
+    font-size : 110%;
+}
+.caixatit2{
+    font-style: italic;
+    font-size : 80%;
+}
+
+
+/* Area do Email*/
+
+
+.email {
+    padding:20px;
+    border:1px solid #a35549;
+    border-radius:4px;
+    display:inline-block;
+    vertical-align:middle;        
+    
+}	
+
+/* Area dos Gráficos*/
+
+.headgraf{
+font-weight : bold;
+text-align : center;
+width : 100%;
+}
+
+.headgraf1{
+font-size : 16px;
+background-color : #a35549;
+color : #fff;
+height: 50px;
+padding-top : 15px;
+padding-bottom : 15px;
+
+}
+.headgraf2{
+font-size : 20px;
+color : #222;
+background-color : #fff;
+border : 2px solid #a35549;
+height: 50px;
+padding-top : 10px;
+padding-bottom : 10px;
+}
+.headgraf3{
+font-size : 14px;
+color : #fff;
+background-color : #0e9100;
+height: 50px;
+padding-top : 15px;
+padding-bottom : 20px;
+}
+
+.panelgraf{
+width : 100%;
+}
+
+.bodygraf{
+border-bottom : 2px solid #ccc; 
+border-left : 2px solid #ccc; 
+border-right : 2px solid #ccc; 
+
+}
+
+.footgraf{
+color : #0e9100;  
+font-weight : bold;
+padding : 15px;
+}
+
+
+
+
+/* Area das Regras */
+.accordion {
+  background-color: #fff;
+  color: #444;
+  cursor: pointer;
+  padding: 18px;
+  width: 100%;
+  border: none;
+  text-align: left;
+  outline: none;
+  font-size: 18px;
+  transition: 0.4s;
+}
+
+.active, .accordion:hover {
+  background-color: #2B5054;
+  color: #fff;
+}
+
+.conteudo {
+  padding: 0 18px;
+  display: none;
+  background-color: white;
+  overflow: hidden;
+  font-size: 16px;  
+}
+
+
+.accordion:after {
+    font-family: 'Glyphicons Halflings';
+    content: "\e114"; 
+    float: right;
+    color: #a35549;
+}
+.accordion.collapsed:after {
+    content: "\e080";
+}   
