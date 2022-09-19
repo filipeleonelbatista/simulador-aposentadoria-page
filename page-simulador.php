@@ -461,7 +461,7 @@ function validaEmail($email)
 														height: 25px;
 														width: 25px;
 														" type="checkbox" class=" wow bounceInRight" id="form_Aceite" name="form_Aceite" required />
-							<label for="form_Aceite" style="text-align: justify;">De acordo com as Leis 12.965/2014 e 13.709/2018, que regulam o uso da Internet e o tratamento de dados pessoais no Brasil, autorizo o escritório Mariana da Aldeia Advocacia a enviar notificações por e-mail ou outros meios e concordo com sua Política de Privacidade.
+							<label for="form_Aceite" style="text-align: justify;">De acordo com as Leis 12.965/2014 e 13.709/2018, que regulam o uso da Internet e o tratamento de dados pessoais no Brasil, autorizo o escritório <?php echo get_theme_mod("escritorio_simulador"); ?> a enviar notificações por e-mail ou outros meios e concordo com sua Política de Privacidade.
 							</label>
 						</div>
 
@@ -759,12 +759,11 @@ function validaEmail($email)
 			</div>
 
 			<div class="col-md-12" style="text-align: center;">
-				<div class="botao-zap">
-					<a id="zap-float" target="_blank" class="especi btn btn-primary btn-style  hvr-grow" href="https://wa.me/<?php echo get_theme_mod("whatsapp_simulador") ?>?text=Ola%20gostaria%20de%20um%20atendimento."> Falar com um Especialista
-						<i class="fa fa-whatsapp"></i>
-					</a>
-
-				</div>
+				<a id="zap-float" target="_blank" class="especi btn btn-primary btn-style  hvr-grow" href="https://wa.me/<?php echo get_theme_mod("whatsapp_simulador") ?>?text=Ola%20gostaria%20de%20um%20atendimento.">
+					<div class="botao-zap">
+					Falar com um Especialista <i class="fa-brands fa-whatsapp"></i>	
+					</div>
+				</a>
 			</div>
 		<?php }  ?>
 

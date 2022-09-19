@@ -74,15 +74,15 @@ function sa_customizer_section_register($wp_customize)
 	//  =============================
 	//  = Text Input                =
 	//  =============================
-	$wp_customize->add_setting('whatsapp_simulador', array(
+	$wp_customize->add_setting('escritorio_simulador', array(
 		'default' => _x('', $theme_name),
 		'type' => 'theme_mod'
 
 	));
 
-	$wp_customize->add_control('whatsapp_simulador', array(
-		'label' => __('Whatsapp', $theme_name),
-		'description' => __('Digite o apenas numeros começando com DDI e DDD + telefone Ex:. 5551999999999', $theme_name),
+	$wp_customize->add_control('escritorio_simulador', array(
+		'label' => __('Escritório', $theme_name),
+		'description' => __('Digite o nome do escritorio', $theme_name),
 		'section' => 'sa_customize_section',
 		'priority' => 4,
 	));
