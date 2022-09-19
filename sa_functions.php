@@ -70,7 +70,7 @@ function sa_customizer_section_register($wp_customize)
 		'section' => 'sa_customize_section',
 		'priority' => 4,
 	));
-
+	
 	//  =============================
 	//  = Text Input                =
 	//  =============================
@@ -85,6 +85,22 @@ function sa_customizer_section_register($wp_customize)
 		'description' => __('Digite o nome do escritorio', $theme_name),
 		'section' => 'sa_customize_section',
 		'priority' => 5,
+	));
+
+	//  =============================
+	//  = Text Input                =
+	//  =============================
+	$wp_customize->add_setting('whatsapp_simulador', array(
+		'default' => _x('', $theme_name),
+		'type' => 'theme_mod'
+
+	));
+
+	$wp_customize->add_control('whatsapp_simulador', array(
+		'label' => __('Whatsapp', $theme_name),
+		'description' => __('Digite o apenas numeros começando com DDI e DDD + telefone Ex:. 5551999999999', $theme_name),
+		'section' => 'sa_customize_section',
+		'priority' => 6,
 	));
 }
 
