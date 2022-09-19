@@ -84,7 +84,7 @@ function sa_customizer_section_register($wp_customize)
 		'label' => __('Escritório', $theme_name),
 		'description' => __('Digite o nome do escritorio', $theme_name),
 		'section' => 'sa_customize_section',
-		'priority' => 4,
+		'priority' => 5,
 	));
 }
 
