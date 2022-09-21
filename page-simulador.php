@@ -94,11 +94,13 @@ if (isset($_POST) && !empty($_POST)) {
 	$html .= '</body>';
 	$html .= '</html>';
 
-	$to = get_theme_mod("email_simulador");
-	$subject = "Simulador Aposentadoria - Uso no site ";
-	$headers = array('Content-Type: text/html; charset=UTF-8');
+	$message = $html;
+	
+	 $to = get_theme_mod("email_simulador");
+	 $subject = "Simulador Aposentadoria - Uso no site ";
+	 $headers = array('Content-Type: text/html; charset=UTF-8','From: Formulário do simulador do escritorio ' . get_theme_mod('escritorio_simulador') . ' <' . $email .'>');
 
-	$sent = wp_mail($to, $subject, $message, $headers);
+	 $sent = wp_mail($to, $subject, $message, $headers);
 
 	/*********************    Calculo da Aposentadoria - Regra 1 - Regra dos Pontos      *******************/
 
@@ -484,6 +486,7 @@ function validaEmail($email)
 					<br>
 					<div class="col-md-12 btn-calc">
 						<!--<button class="btn btn-custom hvr-bounce-to-right" onclick="calcular()">Simular</button>-->
+						<?php echo $sent ? '<p style="font-weight : bold; font-size: 16px; color: green;"> Sucesso</p>' : '<p style="font-weight : bold; font-size: 16px; color: red;">Erro</p>'; ?>
 						<?php echo $erro ? '<p style="font-weight : bold; font-size: 16px; color: red;">' . $msgerro . '</p>' : '';   ?>
 						<button class="btn btn-custom2 hvr-grow" id="btsimula" type="submit">Simular</button>
 					</div>
