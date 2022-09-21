@@ -3,7 +3,7 @@
 function sa_customizer_section_register($wp_customize)
 {
 	// mudar esse noma para o nome do tema ativo
-	$theme_name = 'ascorsan';
+	$theme_name = 'hello-elementor';
 
 	$wp_customize->add_section('sa_customize_section', array(
 		'title'    => __('Simulador Aposentadoria', $theme_name),
@@ -68,9 +68,26 @@ function sa_customizer_section_register($wp_customize)
 	$wp_customize->add_control('email_simulador', array(
 		'label' => __('Email do formulário', $theme_name),
 		'section' => 'sa_customize_section',
+		'description' => __('Digite o nome do email que receberá os contatos feitos pelo simulador.', $theme_name),
 		'priority' => 4,
 	));
 	
+	//  =============================
+	//  = Text Input                =
+	//  =============================
+	$wp_customize->add_setting('email_simulador_host', array(
+		'default' => _x('', $theme_name),
+		'type' => 'theme_mod'
+
+	));
+
+	$wp_customize->add_control('email_simulador_host', array(
+		'label' => __('Email do domínio', $theme_name),
+		'section' => 'sa_customize_section',
+		'description' => __('Email do domínio que enviará os emails, geralmente é algo como contato@meudominio.com.br', $theme_name),
+		'priority' => 5,
+	));
+
 	//  =============================
 	//  = Text Input                =
 	//  =============================
@@ -84,9 +101,8 @@ function sa_customizer_section_register($wp_customize)
 		'label' => __('Escritório', $theme_name),
 		'description' => __('Digite o nome do escritorio', $theme_name),
 		'section' => 'sa_customize_section',
-		'priority' => 5,
+		'priority' => 6,
 	));
-
 	//  =============================
 	//  = Text Input                =
 	//  =============================
@@ -100,8 +116,9 @@ function sa_customizer_section_register($wp_customize)
 		'label' => __('Whatsapp', $theme_name),
 		'description' => __('Digite o apenas numeros começando com DDI e DDD + telefone Ex:. 5551999999999', $theme_name),
 		'section' => 'sa_customize_section',
-		'priority' => 6,
+		'priority' => 7,
 	));
+
 }
 
 add_action('customize_register', 'sa_customizer_section_register');
