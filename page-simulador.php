@@ -79,7 +79,7 @@ if (isset($_POST) && !empty($_POST)) {
 	}
 
 	$html = '<!doctype html>';
-	$html = '<html lang="pt-br">';
+	$html .= '<html lang="pt-br">';
 	$html .= '	<head>';
 	$html .= '		<meta charset="utf-8">';
 	$html .= '	</head>	';
@@ -94,15 +94,11 @@ if (isset($_POST) && !empty($_POST)) {
 	$html .= '</body>';
 	$html .= '</html>';
 
-	// $to = get_theme_mod("email_simulador");
-	// $subject = "Simulador Aposentadoria - Uso no site ";
-	// $headers = array(
-	// 	'Content-Type: text/html; charset=UTF-8',
-	// 	'From: <' . $email . '>',
-	// 	'Reply-To: <' . $email . '>'
-	// );
+	$to = get_theme_mod("email_simulador");
+	$subject = "Simulador Aposentadoria - Uso no site ";
+	$headers = array('Content-Type: text/html; charset=UTF-8');
 
-	// $sent = wp_mail($to, $subject, $message, $headers);
+	$sent = wp_mail($to, $subject, $message, $headers);
 
 	/*********************    Calculo da Aposentadoria - Regra 1 - Regra dos Pontos      *******************/
 
