@@ -402,6 +402,10 @@ function validaEmail($email)
 
 <div class="body-content" style="padding: 15px;">
 
+	<!-- <div class="starter-template">
+		<?php //the_content() ?>
+	</div> -->
+
 	<div class="starter-template">
 		<h1 class="headsimulador" style="text-transform: uppercase;">Simule sua aposentadoria</h1>
 
